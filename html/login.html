@@ -13,22 +13,36 @@
             <h1>Login</h1>
             <p><em>Welcome back Sid!!</em></p>
 
-            <form action="" method="post" class="login-form">
+            <form action="main.html" method="post" class="login-form" onsubmit="return validateForm(this.form)">
                 <div class="form-row">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="Enter your email" />
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text" placeholder="Enter your username" required="required" />
                 </div>
 
                 <div class="form-row">
                     <label for="password">Password</label>
-                    <input id="password" name="password" type="password" placeholder="Enter your password" />
+                    <input id="password" type="password" placeholder="Enter your password" required="required" />
                 </div>
 
-                <div class="form-row">
-                    <input id="submit" type="submit" name="submit" value="Login" />
+                <div class="form-row " style="position: relative;">
+                    <input type="submit" value="Login" />
                 </div>
 
             </form>
+            <script lang="javascript">
+                function validateForm()
+                {
+                    if (document.getElementById('username').value == "admin" && document.getElementById('password').value == "admin")
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        alert("Invalid credentials");
+                        return false;
+                    }
+                }
+            </script>
         </div>
 
 

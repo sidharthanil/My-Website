@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1F38;
+}
+
+.main-page {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #c6c6c6;
+    line-height: 1.3;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-home {
+    width: 100%;
+}
+
+.intro {
+    width: inherit;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.intro-row {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.coloumn-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.coloumn-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.myphoto {
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.intro-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.intro-description h1 {
+    font-size: 40px;
+}
+
+.intro-description h3 {
+    font-size: 20px;
+}
+
+.social-list {
+    margin-top: 10px;
+}
+
+.social-list li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icons {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    color: white;
+    line-height: 36px;
+    background-color: #00b6f9;
+    border: 1px solid #068cd6;
+    border-radius: 50%;
+    margin-right: 7px;
+    text-align: center;
+    font-size: 16px;
+}
