@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+
+/**** GENERAL CSS START ****/
+
 body {
-    background-color: #1E1F38;
+    background-color: #CFD8DC;
 }
 
 .main-page {
@@ -20,18 +23,37 @@ body {
     align-items: center;
 }
 
-.section-home {
-    width: 100%;
+.border-bottom {
+    border-bottom: 1px solid #ededed;
 }
 
-.intro, .menu {
-    width: inherit;
-    display: flex;
-    align-items: center;
+.section-border-top-bottom {
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #ededed;
 }
 
 .padding-top-bottom {
     padding: 48px 0;
+}
+
+.padding-top-bottom-20px {
+    padding: 20px 0;
+}
+
+section {
+    width: 100%;
+}
+
+
+/**** GENERAL CSS END ****/
+
+
+/**** HOME SECTION START ****/
+
+.intro {
+    width: inherit;
+    display: flex;
+    align-items: center;
 }
 
 .intro-row {
@@ -42,13 +64,13 @@ body {
     flex-wrap: wrap;
 }
 
-.coloumn-left {
+.intro-row > .coloumn-left {
     width: 40%;
     display: flex;
     justify-content: flex-end;
 }
 
-.coloumn-right {
+.intro-row > .coloumn-right {
     width: 60%;
     display: flex;
     justify-content: flex-start;
@@ -86,7 +108,7 @@ body {
     margin-top: 10px;
 }
 
-.social-list li, .menu-list li {
+.social-list li {
     display: inline-block;
     list-style: none;
 }
@@ -105,10 +127,6 @@ body {
     font-size: 16px;
 }
 
-.border-bottom {
-    border-bottom: 1px solid #ededed;
-}
-
 @media only screen and (max-width:700px) {
     .intro-row {
         flex-direction: column;
@@ -117,13 +135,14 @@ body {
     .intro-description {
         align-items: center;
     }
-    .coloumn-left, .coloumn-right {
+    .coloumn-left,
+    .coloumn-right {
         width: 100%;
         justify-content: center;
     }
 }
 
-@media only screen and (max-width:430px) {
+@media only screen and (max-width:490px) {
     .intro-description h1 {
         font-size: 28px;
         text-align: center;
@@ -132,4 +151,77 @@ body {
         font-size: 16px;
         text-align: center;
     }
+}
+
+
+/**** HOME SECTION END ****/
+
+
+/**** MENU SECTION START ****/
+
+.menu {
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.menu-row {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.menu-list li {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu-item {
+    display: inline-block;
+    width: 170px;
+    height: 210px;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+.menu-item .foto {
+    display: block;
+    width: 170px;
+    height: 170px;
+}
+
+.menu-item .name {
+    display: block;
+    width: 170px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+
+/**** MENU SECTION END ****/
+
+
+/**** PROFILE SECTION - HEAD START ****/
+
+.profile-head-row {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.profile-head-row > .coloumn-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-head-row > .coloumn-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
 }
