@@ -3,16 +3,18 @@
 
 <head>
     <meta charset="utf-8" />
-    <link href="../css/main.css" rel="stylesheet" />
-    <title>Sid-Android Dev</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <title>Sid | Android Dev</title>
     <script src="https://use.fontawesome.com/5de98ea1ef.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </head>
 
 <body>
     <div class="navbar section-border-top-bottom" role="navigation">
         <div class="navbar-list-wrap">
             <ul class="navbar-list">
-                <li><a class="navbar-item" href="#home">Home</a></li>
+                <li><a class="navbar-item" onclick="scrollToTop()">Home</a></li>
                 <li><a class="navbar-item" href="#profile">Profile</a></li>
                 <li><a class="navbar-item" href="#">Resume</a></li>
                 <li><a class="navbar-item" href="#">Portfolio</a></li>
@@ -21,8 +23,8 @@
             </ul>
         </div>
     </div>
-    <div class="main-page">
-        <section class="section-home" id="home">
+    <div class="main-page" id="home">
+        <section class="section-home">
             <nav class="intro border-bottom padding-top-bottom">
                 <div class="intro-row">
                     <div class="coloumn-left">
@@ -101,9 +103,6 @@
             </header>
         </section>
     </div>
-</body>
-
-</html>
 </body>
 
 </html>

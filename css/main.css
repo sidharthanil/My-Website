@@ -8,7 +8,7 @@
 /**** GENERAL CSS START ****/
 
 body {
-    background-color: #CFD8DC;
+    background-color: #F5F5F5;
 }
 
 .main-page {
@@ -58,19 +58,35 @@ section {
     background: white;
 }
 
+.navbar-list {
+    list-style-type: none;
+}
+
 .navbar-list li {
-    display: inline;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.navbar-list a:hover {
+    border-bottom: 2px solid #00B6F9;
+}
+
+.navbar-list a:active {
+    border-bottom: 2px solid #00B6F9;
 }
 
 .navbar-item {
+    display: inline-block;
+    line-height: 47px;
     text-decoration: none;
-    margin: 0px 10px;
     color: black;
+    outline: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.8s ease;
 }
 
 .navbar-list-wrap {
     text-align: center;
-    line-height: 50px;
 }
 
 
@@ -164,7 +180,8 @@ section {
     .intro-description {
         align-items: center;
     }
-    .intro-row>.coloumn-left, .intro-row>.coloumn-right {
+    .intro-row>.coloumn-left,
+    .intro-row>.coloumn-right {
         width: 100%;
         justify-content: center;
     }
