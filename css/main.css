@@ -32,12 +32,17 @@ body {
     border-bottom: 1px solid #ededed;
 }
 
-.padding-top-bottom {
+.padding-top-bottom-48px {
     padding: 48px 0;
 }
 
 .padding-top-bottom-30px {
     padding: 30px 0;
+}
+
+.padding-left-right-20px {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 section {
@@ -68,10 +73,6 @@ section {
 }
 
 .navbar-list a:hover {
-    border-bottom: 2px solid #00B6F9;
-}
-
-.navbar-list a:active {
     border-bottom: 2px solid #00B6F9;
 }
 
@@ -130,6 +131,8 @@ section {
     margin: 15px;
     min-width: 190px;
     min-height: 190px;
+    background-image: url("../assets/images/prof.jpg");
+    background-size: contain;
 }
 
 .intro-description {
@@ -180,8 +183,7 @@ section {
     .intro-description {
         align-items: center;
     }
-    .intro-row>.coloumn-left,
-    .intro-row>.coloumn-right {
+    .intro-row>.coloumn-left, .intro-row>.coloumn-right {
         width: 100%;
         justify-content: center;
     }
@@ -288,4 +290,85 @@ section {
 
 /**** PROFILE SECTION - HEAD END ****/
 
-ND ****/ ND ****/
+
+/*** PROFILE SECTION - CONTENT START ****/
+
+.content-row {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.content-row>.coloumn-left {
+    width: 60%;
+}
+
+.content-row p {
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.content-row .button {
+    display: inline-block;
+    background-color: #f5f5f5;
+    color: black;
+    border: 1px solid #d1d1d1;
+    padding: 0px 20px;
+    line-height: 38px;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.content-row .download-cv {
+    background-color: #00B6F9;
+    color: white;
+}
+
+.content-row .download-cv:hover {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.content-row .contact-me:hover {
+    background-color: #00B6F9;
+    color: white;
+}
+
+.content-row .title {
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+
+.content-row>.coloumn-right {
+    width: 40%;
+}
+
+.quick-details-block {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #dfdfdf;
+    background-color: #fdfdfd;
+}
+
+.quick-details-block>table {
+    width: 100%;
+}
+
+.quick-details-block .details {
+    text-align: left;
+    width: 50%;
+    padding-bottom: 18px;
+}
+
+.quick-details-block .description {
+    text-align: right;
+    width: 50%;
+    padding-bottom: 18px;
+}
+
+
+/*** PROFILE SECTION - CONTENT START ****/
