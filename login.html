@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link href="../css/login.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
     <title>Admin</title>
 </head>
 
@@ -12,40 +12,30 @@
         <div class="login-header">
             <h1>Login</h1>
             <p><em>Welcome back Sid!!</em></p>
-
             <form action="main.html" method="post" class="login-form" onsubmit="return validateForm(this.form)">
                 <div class="form-row">
                     <label for="username">Username</label>
                     <input id="username" name="username" type="text" placeholder="Enter your username" required="required" />
                 </div>
-
                 <div class="form-row">
                     <label for="password">Password</label>
                     <input id="password" type="password" placeholder="Enter your password" required="required" />
                 </div>
-
                 <div class="form-row " style="position: relative;">
                     <input type="submit" value="Login" />
                 </div>
-
             </form>
             <script lang="javascript">
-                function validateForm()
-                {
-                    if (document.getElementById('username').value == "admin" && document.getElementById('password').value == "admin")
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        alert("Invalid credentials");
-                        return false;
-                    }
+            function validateForm() {
+                if (document.getElementById('username').value == "admin" && document.getElementById('password').value == "admin") {
+                    return true;
+                } else {
+                    alert("Invalid credentials");
+                    return false;
                 }
+            }
             </script>
         </div>
-
-
     </div>
 </body>
 
