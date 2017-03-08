@@ -6,6 +6,16 @@ function scrollToTop() {
     return false;
 }
 
+/*** Scroll to desired position ***/
+function scrollTorr(id) {
+    console.log("id = ");
+    $("html,body").animate({
+        scrollTop: $("#" + id).offset().top
+    }, 600);
+    return false;
+
+}
+
 /*** navbar visible only after menu section ***/
 $(document).ready(function() {
 
