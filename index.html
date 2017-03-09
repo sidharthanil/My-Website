@@ -18,7 +18,7 @@
             <ul class="navbar-list">
                 <li><a class="navbar-item" onclick="scrollToTop()">Home</a></li>
                 <li><a class="navbar-item" onclick="scrollTorr('profile')">Profile</a></li>
-                <li><a class="navbar-item" href="#">Resume</a></li>
+                <li><a class="navbar-item" onclick="scrollTorr('resume')">Resume</a></li>
                 <li><a class="navbar-item" href="#">Portfolio</a></li>
                 <li><a class="navbar-item" href="#">Downloads</a></li>
                 <li><a class="navbar-item" href="#">Contact</a></li>
@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="main-page" id="home">
-        <section class="section-home">
+        <section class="section-home box-shadow">
             <nav class="intro border-bottom padding-top-bottom-48px">
                 <div class="intro-row">
                     <div class="coloumn-left">
@@ -51,31 +51,32 @@
                 <div class="menu-row">
                     <ul class="menu-list">
                         <li>
-                            <a href="#profile" class=" menu-item">
+                            <a onclick="scrollTorr('profile')" class="menu-item">
                                 <span class="foto">
-                                    <img src="assets/images/profile.png" class="menu-image"/>
+                                    <img src="assets/images/profile.png" class="menu-image" />
+
                                 </span>
                                 <span class="name">Profile</span>
                             </a>
-                            <a href="#resume" class="menu-item">
+                            <a onclick="scrollTorr('resume')" class="menu-item">
                                 <span class="foto">
                                     <img src="assets/images/resume.png" class="menu-image"/>
                                 </span>
                                 <span class="name">Resume</span>
                             </a>
-                            <a href="#portfolio" class="menu-item">
+                            <a onclick="scrollTorr('portfolio')" class="menu-item">
                                 <span class="foto">
                                     <img src="assets/images/portfolio.png" class="menu-image"/>
                                 </span>
                                 <span class="name">Portfolio</span>
                             </a>
-                            <a href="#downloads" class="menu-item">
+                            <a onclick="scrollTorr('downloads')" class="menu-item">
                                 <span class="foto">
                                     <img src="assets/images/blog.png" class="menu-image"/>
                                 </span>
                                 <span class="name">Downloads</span>
                             </a>
-                            <a href="#contact" class="menu-item">
+                            <a onclick="scrollTorr('contact')" class="menu-item">
                                 <span class="foto">
                                     <img src="assets/images/contact.png" class="menu-image"/>
                                 </span>
@@ -86,16 +87,17 @@
                 </div>
             </nav>
         </section>
-        <section class="section-profile section-border-top-bottom" id="profile">
-            <header class="profile-head padding-top-bottom-30px padding-left-right-20px border-bottom">
-                <div class="profile-head-row">
+        <div class="material-divider"></div>
+        <section class="section-profile box-shadow" id="profile">
+            <header class="head padding-top-bottom-30px padding-left-right-20px border-bottom">
+                <div class="head-row">
                     <div class="coloumn-left">
-                        <span class="profile-photo">
+                        <span class="photo">
                             <img src="assets/images/profile.png" />
                         </span>
                     </div>
                     <div class="coloumn-right">
-                        <span class="profile-title">
+                        <span class="title">
                             <h2 class="head-title">Profile</h2>
                             <h4 class="head-subtitle">A Brief About Me</h4>
                         </span>
@@ -163,7 +165,25 @@
                 </div>
             </section>
         </section>
-
+        <div class="material-divider"></div>
+        <section class="section-resume box-shadow" id="resume">
+            <header class="head padding-top-bottom-30px padding-left-right-20px border-bottom">
+                <div class="head-row">
+                    <div class="coloumn-left">
+                        <span class="photo">
+                            <img src="assets/images/resume.png" />
+                        </span>
+                    </div>
+                    <div class="coloumn-right">
+                        <span class="title">
+                            <h2 class="head-title">Resume</h2>
+                            <h4 class="head-subtitle">My Academic Qualifications</h4>
+                        </span>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <div class="material-divider"></div>
     </div>
 </body>
 
