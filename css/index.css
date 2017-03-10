@@ -53,14 +53,12 @@ section {
     width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
     font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+    font-weight: 300;
 }
 
 .material-divider {
@@ -69,7 +67,7 @@ p {
     background-color: #F5F5F5;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:767px) {
     .main-page {
         margin: 0% 0%;
     }
@@ -103,6 +101,7 @@ p {
 
 .navbar-list a:hover {
     border-bottom: 2px solid #00B6F9;
+    cursor: pointer;
 }
 
 .navbar-item {
@@ -119,7 +118,7 @@ p {
     text-align: center;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:767px) {
     .navbar {
         display: none!important;
     }
@@ -210,7 +209,7 @@ p {
     font-size: 16px;
 }
 
-@media only screen and (max-width:710px) {
+@media only screen and (max-width:767px) {
     .intro-row {
         flex-direction: column;
         align-items: center;
@@ -218,8 +217,7 @@ p {
     .intro-description {
         align-items: center;
     }
-    .intro-row>.coloumn-left,
-    .intro-row>.coloumn-right {
+    .intro-row>.coloumn-left, .intro-row>.coloumn-right {
         width: 100%;
         justify-content: center;
     }
@@ -293,6 +291,10 @@ p {
     color: #00B6F9;
 }
 
+.menu-item:hover {
+    cursor: pointer;
+}
+
 
 /**** MENU SECTION END ****/
 
@@ -333,6 +335,22 @@ p {
 .title>h2 {
     line-height: 48px;
     font-size: 42px;
+}
+
+@media only screen and (max-width: 767px) {
+    .head-row>.coloumn-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .head-row>.coloumn-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .head-row {
+        flex-direction: column;
+    }
 }
 
 
@@ -385,11 +403,13 @@ p {
 .content-row .download-cv:hover {
     background-color: #f5f5f5;
     color: black;
+    cursor: pointer;
 }
 
 .content-row .contact-me:hover {
     background-color: #00B6F9;
     color: white;
+    cursor: pointer;
 }
 
 .content-row .title {
@@ -425,7 +445,7 @@ p {
     font-weight: lighter;
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1023px) {
     .content-row {
         display: block;
     }
