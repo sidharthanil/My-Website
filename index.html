@@ -4,12 +4,14 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Sid | Front End Dev</title>
+    <title>Sid | PortFolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="https://use.fontawesome.com/5de98ea1ef.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet" />
+
+
 </head>
 
 <body>
@@ -19,9 +21,9 @@
                 <li><a class="navbar-item" onclick="scrollToTop()">Home</a></li>
                 <li><a class="navbar-item" onclick="scrollTorr('profile')">Profile</a></li>
                 <li><a class="navbar-item" onclick="scrollTorr('resume')">Resume</a></li>
-                <li><a class="navbar-item" href="#">Portfolio</a></li>
-                <li><a class="navbar-item" href="#">Downloads</a></li>
-                <li><a class="navbar-item" href="#">Contact</a></li>
+                <li><a class="navbar-item" onclick="scrollTorr('portfolio')">Portfolio</a></li>
+                <li><a class="navbar-item" onclick="scrollTorr('downloads')">Downloads</a></li>
+                <li><a class="navbar-item" onclick="scrollTorr('contact')">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -182,9 +184,188 @@
                     </div>
                 </div>
             </header>
+            <section class="section-resume-details padding-top-bottom-30px padding-left-right-20px border-bottom">
+                <div class="resume-details-row">
+                    <div class="coloumn-left">
+                        <h2 class="resume-content-title">Education</h2>
+                        <div class="resume-content-block">
+                            <div id="education-slider" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">Name</td>
+                                                <td class="description">School of Art</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Address</td>
+                                                <td class="description">Melbourne VIC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">1996-2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Grade/Percentage</td>
+                                                <td class="description">A level</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">Name</td>
+                                                <td class="description">School of Art</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Address</td>
+                                                <td class="description">Melbourne VIC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">1996-2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Grade/Percentage</td>
+                                                <td class="description">A level</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+
+                                </div>
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">Name</td>
+                                                <td class="description">School of Art</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Address</td>
+                                                <td class="description">Melbourne VIC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">1996-2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Grade/Percentage</td>
+                                                <td class="description">A level</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="coloumn-right">
+                        <h2 class="resume-content-title">Work</h2>
+                        <div class="resume-content-block">
+                            <div id="education-slider" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">Company Name</td>
+                                                <td class="description">Irisind</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Address</td>
+                                                <td class="description">Cochin</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">2016 -17</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Post</td>
+                                                <td class="description">Front end developer</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">Name</td>
+                                                <td class="description">School of Art</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Address</td>
+                                                <td class="description">Melbourne VIC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">1996-2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Grade/Percentage</td>
+                                                <td class="description">A level</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+
+                                </div>
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">Name</td>
+                                                <td class="description">School of Art</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Address</td>
+                                                <td class="description">Melbourne VIC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">1996-2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Grade/Percentage</td>
+                                                <td class="description">A level</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skills padding-top-bottom-30px padding-left-right-20px">
+                <div class="skills-row">
+                    <div class="coloumn-left"></div>
+                    <div class="coloumn-right"></div>
+                </div>
+            </section>
+
         </section>
         <div class="material-divider"></div>
     </div>
+    <script src="https://use.fontawesome.com/5de98ea1ef.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
 </body>
 
 </html>
