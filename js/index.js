@@ -51,5 +51,18 @@ $(document).ready(function() {
         items: 1,
         dots: false,
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
-    })
+    });
+
 });
+$(function() {
+    $('.ratyli').ratyli({disable:true});
+});
+
+// $(function() {
+//   $('.circle').circleProgress({
+//       value: 0.75,
+//       size: 100,
+//       fill: "#00B6F9",
+//       thickness: 20
+//   });
+// })
