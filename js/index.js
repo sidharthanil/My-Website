@@ -41,9 +41,7 @@ $(document).ready(function() {
 
         return elemTop <= docViewBottom;
     }
-});
 
-$(document).ready(function() {
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -53,10 +51,28 @@ $(document).ready(function() {
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
     });
 
+    $(function() {
+      
+    })
+    $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
 });
+
+
 $(function() {
     $('.ratyli').ratyli({disable:true});
 });
+
+
 
 // $(function() {
 //   $('.circle').circleProgress({
