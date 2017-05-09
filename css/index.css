@@ -10,6 +10,7 @@
 
 body {
     background-color: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
 }
 
 .main-page {
@@ -52,15 +53,6 @@ body {
 
 section {
     width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-}
-
-h4 {
-    font-weight: 300;
 }
 
 .material-divider {
@@ -764,10 +756,7 @@ h4 {
 .arrow_box {
     position: relative;
     background: #fff;
-    border: 1px solid #00B6F9;
-    padding: 40px;
-    width: 280px;
-    height: 100px;
+    border: 1px solid #dfdfdf;
 }
 
 .arrow_box:after, .arrow_box:before {
@@ -784,13 +773,49 @@ h4 {
 .arrow_box:after {
     border-color: rgba(255, 255, 255, 0);
     border-left-color: #fff;
-    border-width: 33px;
-    margin-top: -33px;
+    border-width: 12px;
+    margin-top: -12px;
 }
 
 .arrow_box:before {
-    border-color: rgba(0, 182, 249, 0);
-    border-left-color: #00B6F9;
-    border-width: 33px;
-    margin-top: -33px;
+    border-color: rgba(223, 223, 223, 0);
+    border-left-color: #dfdfdf;
+    border-width: 13px;
+    margin-top: -13px;
+}
+
+.iconspace {
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconspace i {
+    color: #00B6F9;
+    font-size: 30px;
+}
+
+.total-numbers .info-text {
+    line-height: 34px;
+    margin-left: 20px;
+}
+
+.total-numbers {
+    display: flex;
+    text-align: left;
+    font-weight: 300;
+}
+
+.total-numbers .count {
+    font-size: 41px;
+    font-weight: 700;
+    display: block;
+}
+
+.info-details .row {
+    display: flex;
+    justify-content: center;
 }

@@ -11,6 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/circle.css" />
+    <link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
 
 </head>
@@ -414,12 +415,7 @@
                             </div>
                             <label class="circle-progress-label">Team Player</label>
                         </div>
-                        <!-- <div class="circle-progress-block">
-                            <div class="circle">
 
-                            </div>
-                            <label class="circle-progress-label">Team Player</label>
-                        </div> -->
 
                     </div>
                 </div>
@@ -461,7 +457,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-info padding-top-bottom-30px padding-left-right-20px">
+            <section class="section-info border-bottom padding-top-bottom-30px padding-left-right-20px">
                 <div class="info-container">
                     <div class="info-title">
                         <h3>Hobbies & Interests</h3>
@@ -491,26 +487,58 @@
                 </div>
             </section>
             <section class="section-info padding-top-bottom-30px padding-left-right-20px">
-                <div class="info-container">
+                <div class="info-container container">
                     <div class="info-title">
                         <h3>Experience</h3>
                     </div>
                     <div class="info-details">
-
-                        <div class="total-numbers">
-                            <div class="iconspace arrow_box"><i class="fa fa-smile-o"></i></div>
-                            <div class="info-text">
-
-                                <span class="count">450</span> happy clients
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-lg-3">
+                                <div class="total-numbers">
+                                    <div class="iconspace arrow_box"><i class="fa fa-thumbs-o-up"></i></div>
+                                    <div class="info-text">
+                                        <span class="count">1</span>year experience
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3">
+                                <div class="total-numbers">
+                                    <div class="iconspace arrow_box"><i class="fa fa-birthday-cake"></i></div>
+                                    <div class="info-text">
+                                        <span class="count">3</span>projects done
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
 
         </section>
         <div class="material-divider"></div>
+        <section class="section-portfolio box-shadow" id="portfolio">
+            <header class="head padding-top-bottom-30px padding-left-right-20px border-bottom">
+                <div class="head-row">
+                    <div class="coloumn-left">
+                        <span class="photo">
+                          <img src="assets/images/portfolio.png" />
+                      </span>
+                    </div>
+                    <div class="coloumn-right">
+                        <span class="title">
+                          <h2 class="head-title">Portfolio</h2>
+                          <h4 class="head-subtitle">Some of My Works</h4>
+                      </span>
+                    </div>
+                </div>
+            </header>
+            <section class="portfolio-details padding-top-bottom-30px padding-left-right-20px">
+                <div id="portfolio-gallery">
+
+                </div>
+
+            </section>
+        </section>
 
     </div>
     <script src="https://use.fontawesome.com/5de98ea1ef.js"></script>
@@ -518,8 +546,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.1/circle-progress.js"></script>
     <script src="js/jquery.ratyli.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/elastic_grid.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/portfolio_gallery.js"></script>
 
+</body>
+
+</html>
 </body>
 
 </html>

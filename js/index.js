@@ -52,7 +52,7 @@ $(document).ready(function() {
     });
 
     $(function() {
-      
+
     })
     $('.count').each(function () {
         $(this).prop('Counter',0).animate({
