@@ -74,6 +74,7 @@ $(function() {
 
 
 
+
 // $(function() {
 //   $('.circle').circleProgress({
 //       value: 0.75,
