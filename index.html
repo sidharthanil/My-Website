@@ -2,658 +2,648 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Sid | PortFolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/circle.css" />
-  <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <meta charset="utf-8" />
+    <title>Sid | PortFolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/circle.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 
 <body>
-  <div class="navbar section-border-top-bottom" role="navigation">
-    <div class="navbar-list-wrap">
-      <ul class="navbar-list">
-        <li><a class="navbar-item" onclick="scrollToTop()">Home</a></li>
-        <li><a class="navbar-item" onclick="scrollTorr('profile')">Profile</a></li>
-        <li><a class="navbar-item" onclick="scrollTorr('resume')">Resume</a></li>
-        <li><a class="navbar-item" onclick="scrollTorr('portfolio')">Portfolio</a></li>
-        <!-- <li><a class="navbar-item" onclick="scrollTorr('downloads')">Downloads</a></li> -->
-        <li><a class="navbar-item" onclick="scrollTorr('contact')">Contact</a></li>
-      </ul>
+    <div class="navbar section-border-top-bottom" role="navigation">
+        <div class="navbar-list-wrap">
+            <ul class="navbar-list">
+                <li><a class="navbar-item" onclick="scrollToTop()">Home</a></li>
+                <li><a class="navbar-item" onclick="scrollTorr('profile')">Profile</a></li>
+                <li><a class="navbar-item" onclick="scrollTorr('resume')">Resume</a></li>
+                <li><a class="navbar-item" onclick="scrollTorr('portfolio')">Portfolio</a></li>
+                <li><a class="navbar-item" onclick="scrollTorr('contact')">Contact</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
-  <div class="main-page" id="home">
-    <section class="section-home box-shadow">
-      <nav class="intro border-bottom padding-top-bottom-48px">
-        <div class="intro-row row">
-          <div class="col-xs-12 col-sm-5">
-            <div class="myphoto"></div>
-          </div>
-          <div class="col-xs-12 col-sm-7">
-            <div class="intro-description">
-              <h1>SIDHARTH ANIL</h1>
-              <h3>Front End Developer(Android,Web)</h3>
-              <div class="social-links">
-                <ul class="social-list">
-                  <li><a class="social-icons" href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a class="social-icons" href="#"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a class="social-icons" href="#"><i class="fa fa-google-plus"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <nav class="menu padding-top-bottom-48px">
-        <div class="menu-row">
-          <ul class="menu-list">
-            <li>
-              <a onclick="scrollTorr('profile')" class="menu-item">
-                <div class="foto">
-                  <img src="assets/images/profile.png" class="menu-image" />
-
-                </div>
-                <div class="name">Profile</div>
-              </a>
-              <a onclick="scrollTorr('resume')" class="menu-item">
-                <div class="foto">
-                  <img src="assets/images/resume.png" class="menu-image" />
-                </div>
-                <div class="name">Resume</div>
-              </a>
-              <a onclick="scrollTorr('portfolio')" class="menu-item">
-                <div class="foto">
-                  <img src="assets/images/portfolio.png" class="menu-image" />
-                </div>
-                <div class="name">Portfolio</div>
-              </a>
-              <!-- <a onclick="scrollTorr('downloads')" class="menu-item">
-                <div class="foto">
-                  <img src="assets/images/blog.png" class="menu-image" />
-                </div>
-                <div class="name">Downloads</div>
-              </a> -->
-              <a onclick="scrollTorr('contact')" class="menu-item">
-                <div class="foto">
-                  <img src="assets/images/contact.png" class="menu-image" />
-                </div>
-                <div class="name">Contact</div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </section>
-    <div class="material-divider"></div>
-    <section class="section-profile box-shadow" id="profile">
-      <header class="head padding-top-bottom-30px padding-left-right-20px border-bottom container">
-        <div class="head-row row">
-          <div class="col-xs-12 col-sm-5">
-            <div class="photo">
-              <img src="assets/images/profile.png" />
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-7">
-            <div class="title">
-              <h2 class="head-title">Profile</h2>
-              <h4 class="head-subtitle">A Brief About Me</h4>
-            </div>
-          </div>
-        </div>
-      </header>
-      <section class="profile-content padding-top-bottom-30px border-bottom">
-        <div class="profile-content-container">
-          <div class="content-row padding-left-right-20px">
-            <div class="coloumn-left">
-              <h3 class="title">Hello, I am a front-end developer</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>
-                <a class="button contact-me" type="button" href="#">Contact Me Now</a>
-                <a class="button download-cv" type="button" href="#">Download CV</a>
-              </p>
-            </div>
-            <div class="coloumn-right">
-              <div class="grey-block-table">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="details">Name</td>
-                      <td class="description">Sidharth Anil</td>
-                    </tr>
-                    <tr>
-                      <td class="details">Date of birth</td>
-                      <td class="description">October 8, 1993</td>
-                    </tr>
-                    <tr>
-                      <td class="details">Email</td>
-                      <td class="description">sidharthanil08@gmail.com</td>
-                    </tr>
-                    <tr>
-                      <td class="details">Phone</td>
-                      <td class="description">+91 7293294327</td>
-                    </tr>
-                    <tr>
-                      <td class="details">Website</td>
-                      <td class="description">www.sidharthanil.github.io</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-info border-bottom padding-top-bottom-30px padding-left-right-20px">
-        <div class="info-container">
-          <div class="info-title">
-            <h3>What i'm doing</h3>
-          </div>
-          <div class="info-details">
-            <div class="circle-block hover-animate">
-              <span class="icon hover-animate"><i class="fa fa-android"></i></span>
-              <span class="name hover-animate">Android Applications</span>
-            </div>
-            <div class="circle-block hover-animate">
-              <span class="icon hover-animate"><i class="fa fa-desktop"></i></span>
-              <span class="name hover-animate">Web(UI) Development</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-    <div class="material-divider"></div>
-    <section class="section-resume box-shadow" id="resume">
-      <header class="head padding-top-bottom-30px padding-left-right-20px border-bottom">
-        <div class="head-row row">
-          <div class="col-xs-12 col-sm-5">
-            <div class="photo">
-              <img src="assets/images/resume.png" />
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-7">
-            <div class="title">
-              <h2 class="head-title">Resume</h2>
-              <h4 class="head-subtitle">My Academic Qualifications</h4>
-            </div>
-          </div>
-        </div>
-      </header>
-      <section class="section-resume-details padding-top-bottom-30px padding-left-right-20px border-bottom">
-        <div class="resume-details-row row">
-          <div class="col-xs-12 col-sm-12 col-md-6">
-            <h2 class="resume-content-title">Education</h2>
-            <div class="resume-content-block">
-              <div id="education-slider" class="owl-carousel owl-theme">
-                <div class="item">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td class="details">Name</td>
-                        <td class="description">School of Art</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Address</td>
-                        <td class="description">Melbourne VIC</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Period</td>
-                        <td class="description">1996-2000</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Grade/Percentage</td>
-                        <td class="description">A level</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-                </div>
-                <div class="item">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td class="details">Name</td>
-                        <td class="description">School of Art</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Address</td>
-                        <td class="description">Melbourne VIC</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Period</td>
-                        <td class="description">1996-2000</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Grade/Percentage</td>
-                        <td class="description">A level</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-                </div>
-                <div class="item">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td class="details">Name</td>
-                        <td class="description">School of Art</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Address</td>
-                        <td class="description">Melbourne VIC</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Period</td>
-                        <td class="description">1996-2000</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Grade/Percentage</td>
-                        <td class="description">A level</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6">
-            <h2 class="resume-content-title">Work</h2>
-            <div class="resume-content-block">
-              <div id="education-slider" class="owl-carousel owl-theme">
-                <div class="item">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td class="details">Company Name</td>
-                        <td class="description">Irisind</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Address</td>
-                        <td class="description">Cochin</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Period</td>
-                        <td class="description">2016 -17</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Post</td>
-                        <td class="description">Front end developer</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-                </div>
-                <div class="item">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td class="details">Name</td>
-                        <td class="description">School of Art</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Address</td>
-                        <td class="description">Melbourne VIC</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Period</td>
-                        <td class="description">1996-2000</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Grade/Percentage</td>
-                        <td class="description">A level</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-                </div>
-                <div class="item">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td class="details">Name</td>
-                        <td class="description">School of Art</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Address</td>
-                        <td class="description">Melbourne VIC</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Period</td>
-                        <td class="description">1996-2000</td>
-                      </tr>
-                      <tr>
-                        <td class="details">Grade/Percentage</td>
-                        <td class="description">A level</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="skills border-bottom padding-top-bottom-30px padding-left-right-20px">
-        <div class="skills-row row">
-          <div class="col-xs-12 col-sm-12 col-md-6">
-            <h2 class="skills-content-title">Professional Skills</h2>
-            <label class="progress-bar-label">Android Development</label>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%;">
-                <span>78%</span>
-              </div>
-            </div>
-            <label class="progress-bar-label">Web Development</label>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100" style="width: 48%;">
-                <span>48%</span>
-              </div>
-            </div>
-            <label class="progress-bar-label">Electronics & Embedded Systems</label>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-                <span>30%</span>
-              </div>
-            </div>
-            <label class="progress-bar-label">Cross Platform Development</label>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
-                <span>10%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6">
-            <h2 class="skills-content-title">Additional Skills</h2>
-            <div class="circle-progress-block">
-              <div class="c100 p60 circle-progress">
-                <span>60%</span>
-                <div class="slice">
-                  <div class="bar"></div>
-                  <div class="fill"></div>
-                </div>
-              </div>
-              <label class="circle-progress-label">Communication</label>
-            </div>
-            <div class="circle-progress-block">
-              <div class="c100 p30 circle-progress">
-                <span>30%</span>
-                <div class="slice">
-                  <div class="bar"></div>
-                  <div class="fill"></div>
-                </div>
-              </div>
-              <label class="circle-progress-label">Leadership</label>
-            </div>
-            <div class="circle-progress-block">
-              <div class="c100 p85 circle-progress">
-                <span>85%</span>
-                <div class="slice">
-                  <div class="bar"></div>
-                  <div class="fill"></div>
-                </div>
-              </div>
-              <label class="circle-progress-label">Team Player</label>
-            </div>
-          </div>
-        </div>
-        <div class="skills-row row" style="margin-top:10px">
-          <div class="col-xs-12 col-sm-12 col-md-6">
-            <h2 class="skills-content-title">Language Skills</h2>
-            <div class="language-skills">
-              <div class="progress">
-                <label class="progress-bar-label">English</label>
-                <span class="ratyli" data-rate="4"></span>
-              </div>
-              <div class="progress">
-                <label class="progress-bar-label">Malayalam (Native)</label>
-                <span class="ratyli" data-rate="5"></span>
-              </div>
-              <div class="progress">
-                <label class="progress-bar-label">Hindi</label>
-                <span class="ratyli" data-rate="3"></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6">
-            <h2 class="skills-content-title">Knowledge</h2>
-            <div class="knowledge-skills">
-              <div class="coloumn-left">
-                <ul>
-                  <li>Android SDK</li>
-                  <li>React & React Native</li>
-                </ul>
-              </div>
-              <div class="coloumn-right">
-                <ul>
-                  <li>HTML5,CSS3 & Javascript</li>
-                  <li>Micro-controller Programming</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-info border-bottom padding-top-bottom-30px padding-left-right-20px">
-        <div class="info-container">
-          <div class="info-title">
-            <h3>Hobbies & Interests</h3>
-          </div>
-          <div class="info-details">
-            <div class="circle-block hover-animate">
-              <span class="icon hover-animate"><i class="fa fa-headphones"></i></span>
-              <span class="name hover-animate">Music</span>
-            </div>
-            <div class="circle-block hover-animate">
-              <span class="icon hover-animate"><i class="fa fa-rocket"></i></span>
-              <span class="name hover-animate">Travelling</span>
-            </div>
-            <div class="circle-block hover-animate">
-              <span class="icon hover-animate"><i class="fa fa-gamepad"></i></span>
-              <span class="name hover-animate">Video games</span>
-            </div>
-            <div class="circle-block hover-animate">
-              <span class="icon hover-animate"><i class="fa fa-book"></i></span>
-              <span class="name hover-animate">Reading</span>
-            </div>
-            <div class="circle-block hover-animate">
-              <span class="icon hover-animate"><i class="fa fa-wrench"></i></span>
-              <span class="name hover-animate">DIY Projects</span>
-            </div>
-            <div class="circle-block hover-animate">
-              <span class="icon hover-animate"><i class="fa fa-github"></i></span>
-              <span class="name hover-animate">Coding</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-info padding-top-bottom-30px padding-left-right-20px">
-        <div class="info-container container">
-          <div class="info-title">
-            <h3>Experience</h3>
-          </div>
-          <div class="info-details">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6 col-lg-3">
-                <div class="total-numbers">
-                  <div class="iconspace arrow_box"><i class="fa fa-thumbs-o-up"></i></div>
-                  <div class="info-text">
-                    <span class="count">1</span>year experience
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-lg-3">
-                <div class="total-numbers">
-                  <div class="iconspace arrow_box"><i class="fa fa-birthday-cake"></i></div>
-                  <div class="info-text">
-                    <span class="count">3</span>projects done
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-    <div class="material-divider"></div>
-    <section class="section-portfolio box-shadow" id="portfolio">
-      <header class="head padding-top-bottom-30px padding-left-right-20px border-bottom">
-        <div class="head-row row">
-          <div class="col-xs-12 col-sm-5">
-            <div class="photo">
-              <img src="assets/images/portfolio.png" />
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-7">
-            <div class="title">
-              <h2 class="head-title">Portfolio</h2>
-              <h4 class="head-subtitle">Some of My Works</h4>
-            </div>
-          </div>
-        </div>
-      </header>
-      <section class="portfolio-details padding-top-bottom-30px padding-left-right-20px">
-        <div id="portfolio-gallery" class="container">
-          <div class="row">
-            <div class="col-sm-4 col-sm-offset-2 col-xs-6">
-              <div class="hovereffect">
-                <img class="img-responsive" src="assets/images/img.jpg">
-                <div class="overlay">
-                  <h2>BeatMap</h2>
-                  <button type="button" class="info" data-toggle="modal" data-target="#modal1">View Details</button>
-                </div>
-                <div id="modal1" class="modal fade">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <img class="img-responsive" src="assets/images/img.jpg">
-                        <div class="text">
-                          <h3 class="title">BeatMap</h3>
-                          <table>
-                            <tbody>
-                              <tr>
-                                <td class="details">Completed</td>
-                                <td class="description">November 2014</td>
-                              </tr>
-                              <tr>
-                                <td class="details">Client</td>
-                                <td class="description">BeatMap</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde
-                            omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiamae vitae dicta sunt explicabo.</p>
-                          <a href="">See Live</a>
-                        </div>
-                      </div>
+    <div class="main-page" id="home">
+        <section class="section-home box-shadow">
+            <nav class="intro border-bottom padding-top-bottom-48px">
+                <div class="intro-row row">
+                    <div class="col-xs-12 col-sm-5">
+                        <div class="myphoto"></div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-6">
-              <div class="hovereffect">
-                <img class="img-responsive" src="assets/images/img.jpg" alt="">
-                <div class="overlay">
-                  <h2>Project Title</h2>
-                  <button type="button" class="info" data-toggle="modal" data-target="#modal2">View Details</button>
-                </div>
-                <div id="modal2" class="modal fade">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <img class="img-responsive" src="assets/images/img.jpg">
-                        <div class="text">
-                          <h3 class="title">Project Title</h3>
-                          <table>
-                            <tbody>
-                              <tr>
-                                <td class="details">Completed</td>
-                                <td class="description">November 2014</td>
-                              </tr>
-                              <tr>
-                                <td class="details">Client</td>
-                                <td class="description">Envato</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde
-                            omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiamae vitae dicta sunt explicabo.</p>
-                          <a href="">See Live</a>
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="intro-description">
+                            <h1>SIDHARTH ANIL</h1>
+                            <h3>Android App Developer</h3>
+                            <div class="social-links">
+                                <ul class="social-list">
+                                    <li><a class="social-icons" href="https://www.facebook.com/sidharthanil08" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="social-icons" href="https://www.linkedin.com/in/sidharthanil/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a class="social-icons" href="https://github.com/sidharthanil" target="_blank"><i class="fa fa-github"></i></a></li>
+                                    <li><a class="social-icons" href="https://stackoverflow.com/users/7773813/sidharth-anil" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
+            </nav>
+            <nav class="menu padding-top-bottom-48px">
+                <div class="menu-row">
+                    <ul class="menu-list">
+                        <li>
+                            <a onclick="scrollTorr('profile')" class="menu-item">
+                                <div class="foto">
+                                    <img src="assets/images/profile.png" class="menu-image" />
+                                </div>
+                                <div class="name">Profile</div>
+                            </a>
+                            <a onclick="scrollTorr('resume')" class="menu-item">
+                                <div class="foto">
+                                    <img src="assets/images/resume.png" class="menu-image" />
+                                </div>
+                                <div class="name">Resume</div>
+                            </a>
+                            <a onclick="scrollTorr('portfolio')" class="menu-item">
+                                <div class="foto">
+                                    <img src="assets/images/portfolio.png" class="menu-image" />
+                                </div>
+                                <div class="name">Portfolio</div>
+                            </a>
 
-          </div>
-        </div>
-      </section>
-    </section>
-    <div class="material-divider"></div>
-    <section class="section-contact box-shadow" id="contact">
-      <header class="head padding-top-bottom-30px padding-left-right-20px border-bottom">
-        <div class="head-row row">
-          <div class="col-xs-12 col-sm-5">
-            <div class="photo">
-              <img src="assets/images/contact.png" />
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-7">
-            <div class="title">
-              <h2 class="head-title">Contact</h2>
-              <h4 class="head-subtitle">Get in touch with me</h4>
-            </div>
-          </div>
-        </div>
-      </header>
-      <section class="contact-details padding-top-bottom-30px padding-left-right-20px">
+                            <a onclick="scrollTorr('contact')" class="menu-item">
+                                <div class="foto">
+                                    <img src="assets/images/contact.png" class="menu-image" />
+                                </div>
+                                <div class="name">Contact</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <div class="material-divider"></div>
+        <section class="section-profile box-shadow" id="profile">
+            <header class="head padding-top-bottom-30px padding-left-right-20px border-bottom container">
+                <div class="head-row row">
+                    <div class="col-xs-12 col-sm-5">
+                        <div class="photo">
+                            <img src="assets/images/profile.png" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="title">
+                            <h2 class="head-title">Profile</h2>
+                            <h4 class="head-subtitle">A Brief About Me</h4>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="profile-content padding-top-bottom-30px border-bottom">
+                <div class="profile-content-container">
+                    <div class="content-row padding-left-right-20px">
+                        <div class="coloumn-left">
+                            <h3 class="title">Hello, I am an android developer</h3>
+                            <p>Experienced Android developer and a programmer. Android development using Java is my field of expertise. I'm learning Kotlin to add into my workflow. Along with Android, I do front-end web development using HTML5, CSS3, JavaScript,
+                                Bootstrap and jQuery. Also I'm in an attempt to learn MongoDB and NodeJs to become a full stack android + web app developer. </p>
+                            <p>I have a degree in Electronics and Communication Engineering and a diploma in Industrial Automation using PLC and SCADA. Also 1.5 year experience in the field of mobile app development.</p>
+                            <p>
+                                <buitton class="button contact-me" type="button" onclick="scrollTorr('contact')">Contact Me Now</buitton>
+                                <buitton class="button download-cv" type="button" href="#">Download CV</buitton>
+                            </p>
+                        </div>
+                        <div class="coloumn-right">
+                            <div class="grey-block-table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="details">Name</td>
+                                            <td class="description">Sidharth Anil</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="details">Date of birth</td>
+                                            <td class="description">October 8, 1993</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="details">Email</td>
+                                            <td class="description">sidharthanil08@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="details">Phone</td>
+                                            <td class="description">+91 7293294327</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="details">Website</td>
+                                            <td class="description">www.sidharthanil.github.io</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-info border-bottom padding-top-bottom-30px padding-left-right-20px">
+                <div class="info-container">
+                    <div class="info-title">
+                        <h3>What i'm doing</h3>
+                    </div>
+                    <div class="info-details">
+                        <div class="circle-block hover-animate">
+                            <span class="icon hover-animate"><i class="fa fa-android"></i></span>
+                            <span class="name hover-animate">Android Applications</span>
+                        </div>
+                        <div class="circle-block hover-animate">
+                            <span class="icon hover-animate"><i class="fa fa-desktop"></i></span>
+                            <span class="name hover-animate">Web(UI) Development</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="material-divider"></div>
+        <section class="section-resume box-shadow" id="resume">
+            <header class="head padding-top-bottom-30px padding-left-right-20px border-bottom">
+                <div class="head-row row">
+                    <div class="col-xs-12 col-sm-5">
+                        <div class="photo">
+                            <img src="assets/images/resume.png" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="title">
+                            <h2 class="head-title">Resume</h2>
+                            <h4 class="head-subtitle">My Academic Qualifications</h4>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="section-resume-details padding-top-bottom-30px padding-left-right-20px border-bottom">
+                <div class="resume-details-row row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <h2 class="resume-content-title">Education</h2>
+                        <div class="resume-content-block">
+                            <div id="education-slider" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">University</td>
+                                                <td class="description">MG University, Kerala, India</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">2011-2015</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Course</td>
+                                                <td class="description">Electronics & Communication Engineering</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">CGPA/Percentage</td>
+                                                <td class="description">7.55</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">University</td>
+                                                <td class="description">MG University, Kerala, India</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Address</td>
+                                                <td class="description">Melbourne VIC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">1996-2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Grade/Percentage</td>
+                                                <td class="description">A level</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">University</td>
+                                                <td class="description">MG University, Kerala, India</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Address</td>
+                                                <td class="description">Melbourne VIC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">1996-2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Grade/Percentage</td>
+                                                <td class="description">A level</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <h2 class="resume-content-title">Work</h2>
+                        <div class="resume-content-block">
+                            <div id="education-slider" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">Company Name</td>
+                                                <td class="description">Irisind</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Address</td>
+                                                <td class="description">Cochin</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">2016 -17</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Position</td>
+                                                <td class="description">Android Developer</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
-        <!-- start row -->
-        <div class="contact-row">
+                                    <p>Developing productivity apps using Android SDK. Increasing app perfomance using code optimisations and debugging. Creating application wireframes, mockups and User Interface design. Co-ordinating with back-end team
+                                        to ensure flawless app perfomance.</p>
 
-          <div class="circle-contact">
-            <span class="icon"><i class="fa fa-mobile"></i></span>
-            <h3><span class="name">Phone</span></h3>
-            <h4><a href="tel:+911234567890">+91 1234567890</a></h4>
-          </div>
-          <div class="circle-contact">
-            <span class="icon"><i class="fa fa-envelope"></i></span>
-            <h3><span class="name">Mail me @</span></h3>
-            <h4><a href="mailto:mail@sidharthanil.com"class="name">abcd@jfij.com</a></h4>
-          </div>
+                                </div>
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">Name</td>
+                                                <td class="description">iROID Technologies</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Address</td>
+                                                <td class="description">Cochin</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">2016 Jan - 2016 June</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Position</td>
+                                                <td class="description">Mobile App Developer Trainee</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <p>Basics of mobile app development(iOS, Android)</p>
+                                </div>
+                                <div class="item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="details">Name</td>
+                                                <td class="description">School of Art</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Address</td>
+                                                <td class="description">Melbourne VIC</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Period</td>
+                                                <td class="description">1996-2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="details">Grade/Percentage</td>
+                                                <td class="description">A level</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skills border-bottom padding-top-bottom-30px padding-left-right-20px">
+                <div class="skills-row row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <h2 class="skills-content-title">Professional Skills</h2>
+                        <label class="progress-bar-label">Android Development</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%;">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">Web Development</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100" style="width: 48%;">
+                                <span>48%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">Electronics & Embedded Systems</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                        <label class="progress-bar-label">Back-end coding</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
+                                <span>15%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <h2 class="skills-content-title">Additional Skills</h2>
+                        <div class="circle-progress-block">
+                            <div class="c100 p60 circle-progress">
+                                <span>60%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <label class="circle-progress-label">Communication</label>
+                        </div>
+                        <div class="circle-progress-block">
+                            <div class="c100 p30 circle-progress">
+                                <span>30%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <label class="circle-progress-label">Leadership</label>
+                        </div>
+                        <div class="circle-progress-block">
+                            <div class="c100 p85 circle-progress">
+                                <span>85%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <label class="circle-progress-label">Team Player</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-row row" style="margin-top:10px">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <h2 class="skills-content-title">Language Skills</h2>
+                        <div class="language-skills">
+                            <div class="progress">
+                                <label class="progress-bar-label">English</label>
+                                <span class="ratyli" data-rate="4"></span>
+                            </div>
+                            <div class="progress">
+                                <label class="progress-bar-label">Malayalam (Native)</label>
+                                <span class="ratyli" data-rate="5"></span>
+                            </div>
+                            <div class="progress">
+                                <label class="progress-bar-label">Hindi</label>
+                                <span class="ratyli" data-rate="3"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <h2 class="skills-content-title">Knowledge</h2>
+                        <div class="knowledge-skills">
+                            <div class="coloumn-left">
+                                <ul>
+                                    <li>Android SDK</li>
+                                    <li>Kotlin for Android</li>
+                                    <li>IBM Loopback</li>
+                                </ul>
+                            </div>
+                            <div class="coloumn-right">
+                                <ul>
+                                    <li>HTML5,CSS3 & Javascript</li>
+                                    <li>Micro-controller Programming</li>
+                                    <li>PLC, SCADA programming</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-info border-bottom padding-top-bottom-30px padding-left-right-20px">
+                <div class="info-container">
+                    <div class="info-title">
+                        <h3>Hobbies & Interests</h3>
+                    </div>
+                    <div class="info-details">
+                        <div class="circle-block hover-animate">
+                            <span class="icon hover-animate"><i class="fa fa-headphones"></i></span>
+                            <span class="name hover-animate">Music</span>
+                        </div>
+                        <div class="circle-block hover-animate">
+                            <span class="icon hover-animate"><i class="fa fa-rocket"></i></span>
+                            <span class="name hover-animate">Travelling</span>
+                        </div>
+                        <div class="circle-block hover-animate">
+                            <span class="icon hover-animate"><i class="fa fa-gamepad"></i></span>
+                            <span class="name hover-animate">Sports</span>
+                        </div>
+                        <div class="circle-block hover-animate">
+                            <span class="icon hover-animate"><i class="fa fa-book"></i></span>
+                            <span class="name hover-animate">Reading</span>
+                        </div>
+                        <div class="circle-block hover-animate">
+                            <span class="icon hover-animate"><i class="fa fa-wrench"></i></span>
+                            <span class="name hover-animate">DIY Projects</span>
+                        </div>
+                        <div class="circle-block hover-animate">
+                            <span class="icon hover-animate"><i class="fa fa-github"></i></span>
+                            <span class="name hover-animate">Coding</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-info padding-top-bottom-30px padding-left-right-20px">
+                <div class="info-container container">
+                    <div class="info-title">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="info-details">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-lg-3">
+                                <div class="total-numbers">
+                                    <div class="iconspace arrow_box"><i class="fa fa-thumbs-o-up"></i></div>
+                                    <div class="info-text">
+                                        <span class="count">1</span>year experience
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3">
+                                <div class="total-numbers">
+                                    <div class="iconspace arrow_box"><i class="fa fa-birthday-cake"></i></div>
+                                    <div class="info-text">
+                                        <span class="count">3</span>projects done
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="material-divider"></div>
+        <section class="section-portfolio box-shadow" id="portfolio">
+            <header class="head padding-top-bottom-30px padding-left-right-20px border-bottom">
+                <div class="head-row row">
+                    <div class="col-xs-12 col-sm-5">
+                        <div class="photo">
+                            <img src="assets/images/portfolio.png" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="title">
+                            <h2 class="head-title">Portfolio</h2>
+                            <h4 class="head-subtitle">Some of My Works</h4>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="portfolio-details padding-top-bottom-30px padding-left-right-20px">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-2 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="assets/images/img1.jpg">
+                            <div class="overlay">
+                                <h2>BeatMap</h2>
+                                <button type="button" class="info" data-toggle="modal" data-target="#modal1">View Details</button>
+                            </div>
+                            <div id="modal1" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <img class="img-responsive" src="assets/images/img1.jpg" />
+                                            <div class="text">
+                                                <h3 class="title">BeatMap</h3>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="details">Completed</td>
+                                                            <td class="description">November 2014</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="details">Client</td>
+                                                            <td class="description">BeatMap</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed
+                                                    ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiamae vitae dicta sunt explicabo.</p>
+                                                <a href="">See Live</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="assets/images/img1.jpg" />
+                            <div class="overlay">
+                                <h2>Project Title</h2>
+                                <button type="button" class="info" data-toggle="modal" data-target="#modal2">View Details</button>
+                            </div>
+                            <div id="modal2" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <img class="img-responsive" src="assets/images/img1.jpg">
+                                            <div class="text">
+                                                <h3 class="title">Project Title</h3>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="details">Completed</td>
+                                                            <td class="description">November 2014</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="details">Client</td>
+                                                            <td class="description">Envato</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed
+                                                    ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiamae vitae dicta sunt explicabo.</p>
+                                                <a href="">See Live</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
-        </div>
-        <!-- end row -->
+            </section>
+        </section>
+        <div class="material-divider"></div>
+        <section class="section-contact box-shadow" id="contact">
+            <header class="head padding-top-bottom-30px padding-left-right-20px border-bottom">
+                <div class="head-row row">
+                    <div class="col-xs-12 col-sm-5">
+                        <div class="photo">
+                            <img src="assets/images/contact.png" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="title">
+                            <h2 class="head-title">Contact</h2>
+                            <h4 class="head-subtitle">Get in touch with me</h4>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="contact-details padding-top-bottom-30px padding-left-right-20px">
+                <!-- start row -->
+                <div class="contact-row">
+                    <div class="circle-contact">
+                        <span class="icon"><i class="fa fa-mobile"></i></span>
+                        <h3><span class="name">Phone</span></h3>
+                        <h4><a href="tel:+911234567890">+91 1234567890</a></h4>
+                    </div>
+                    <div class="circle-contact">
+                        <span class="icon"><i class="fa fa-envelope"></i></span>
+                        <h3><span class="name">Mail me</span></h3>
+                        <h4><a href="mailto:mail@sidharthanil.com" class="name">abcd@jfij.com</a></h4>
+                    </div>
+                </div>
+                <!-- end row -->
+            </section>
+        </section>
 
-      </section>
-    </section>
-  </div>
-
-  <script src="https://use.fontawesome.com/5de98ea1ef.js"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/jquery.ratyli.min.js"></script>
-  <script src="js/index.js"></script>
-</body>
-
-</html>
+        <script src="https://use.fontawesome.com/5de98ea1ef.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/jquery.ratyli.min.js"></script>
+        <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@ function scrollToTop() {
 function scrollTorr(id) {
     console.log("id = ");
     $("html,body").animate({
-        scrollTop: $("#" + id).offset().top
+        scrollTop: $("#" + id).offset().top -50
     }, 600);
     return false;
 
@@ -71,15 +71,3 @@ $(document).ready(function() {
 $(function() {
     $('.ratyli').ratyli({disable:true});
 });
-
-
-
-
-// $(function() {
-//   $('.circle').circleProgress({
-//       value: 0.75,
-//       size: 100,
-//       fill: "#00B6F9",
-//       thickness: 20
-//   });
-// })
