@@ -52,8 +52,9 @@ $(document).ready(function() {
     });
 
     $(function() {
-
-    })
+        $('.item').matchHeight();
+        $('.info-column').matchHeight();
+    });
     $('.count').each(function () {
         $(this).prop('Counter',0).animate({
             Counter: $(this).text()
@@ -65,9 +66,8 @@ $(document).ready(function() {
             }
         });
     });
-});
 
-
-$(function() {
-    $('.ratyli').ratyli({disable:true});
+    $(function() {
+        $('.ratyli').ratyli({disable:true});
+    });
 });
